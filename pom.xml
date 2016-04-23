@@ -1,5 +1,4 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
 		<groupId>com.taylor</groupId>
@@ -35,10 +34,11 @@
 		<version-javax-jms>3.1.2.2</version-javax-jms>
 		<version-commons-collections>3.2.1</version-commons-collections>
 		<version-mybatis-spring>1.2.2</version-mybatis-spring>
-		
+        
 		<!-- other -->
 		<version-servlet>2.5</version-servlet>
-
+		<version-validation-api>1.0.0.GA</version-validation-api>
+        <version-hibernate-validator>4.2.0.Final</version-hibernate-validator>
 	</properties>
 	<dependencyManagement>
 		<dependencies>
@@ -182,13 +182,22 @@
 				<artifactId>spring-context</artifactId>
 				<version>${version-spring}</version>
 			</dependency>
-            <!-- 其他 -->
+			<!-- 其他 -->
 			<dependency>
 				<groupId>javax.servlet</groupId>
 				<artifactId>servlet-api</artifactId>
 				<version>${version-servlet}</version>
 			</dependency>
-
+			<dependency>
+				<groupId>javax.validation</groupId>
+				<artifactId>validation-api</artifactId>
+				<version>${version-validation-api}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.hibernate</groupId>
+				<artifactId>hibernate-validator</artifactId>
+				<version>${version-hibernate-validator}</version>
+			</dependency>
 		</dependencies>
 	</dependencyManagement>
 </project>
