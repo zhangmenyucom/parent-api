@@ -39,6 +39,8 @@
 		<version-servlet>2.5</version-servlet>
 		<version-validation-api>1.0.0.GA</version-validation-api>
         <version-hibernate-validator>4.2.0.Final</version-hibernate-validator>
+		<version-gson>2.3.1</version-gson>
+		<version-json-lib>2.4</version-json-lib>
 	</properties>
 	<dependencyManagement>
 		<dependencies>
@@ -160,6 +162,11 @@
 			<dependency>
 				<groupId>org.springframework</groupId>
 				<artifactId>spring-beans</artifactId>
+				<version>${version-spring}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework</groupId>
+				<artifactId>spring-jdbc</artifactId>
 				<version>${version-spring}</version>
 			</dependency>
 			<dependency>
