@@ -30,7 +30,7 @@
 		<version-tomcat-jdbc>8.0.15</version-tomcat-jdbc>
 		<version-mybatis>3.2.8</version-mybatis>
 		<version-spymemcached>2.11.5</version-spymemcached>
-		<version-activemq>5.7.0</version-activemq>
+		<version-activemq>5.1.0</version-activemq>
 		<version-javax-jms>3.1.2.2</version-javax-jms>
 		<version-commons-collections>3.2.1</version-commons-collections>
 		<version-mybatis-spring>1.2.2</version-mybatis-spring>
@@ -177,6 +177,11 @@
 			<dependency>
 				<groupId>org.springframework</groupId>
 				<artifactId>spring-webmvc</artifactId>
+				<version>${version-spring}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework</groupId>
+				<artifactId>spring-jms</artifactId>
 				<version>${version-spring}</version>
 			</dependency>
 			<dependency>
