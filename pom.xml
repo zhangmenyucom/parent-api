@@ -30,15 +30,14 @@
 		<version-tomcat-jdbc>8.0.15</version-tomcat-jdbc>
 		<version-mybatis>3.2.8</version-mybatis>
 		<version-spymemcached>2.11.5</version-spymemcached>
-		<version-activemq>5.1.0</version-activemq>
 		<version-javax-jms>3.1.2.2</version-javax-jms>
 		<version-commons-collections>3.2.1</version-commons-collections>
 		<version-mybatis-spring>1.2.2</version-mybatis-spring>
-        
+
 		<!-- other -->
 		<version-servlet>2.5</version-servlet>
 		<version-validation-api>1.0.0.GA</version-validation-api>
-        <version-hibernate-validator>4.2.0.Final</version-hibernate-validator>
+		<version-hibernate-validator>4.2.0.Final</version-hibernate-validator>
 		<version-gson>2.3.1</version-gson>
 		<version-json-lib>2.4</version-json-lib>
 	</properties>
@@ -131,13 +130,6 @@
 				<version>${version-spymemcached}</version>
 			</dependency>
 
-			<!-- activemq -->
-			<dependency>
-				<groupId>org.apache.activemq</groupId>
-				<artifactId>activemq-core</artifactId>
-				<version>${version-activemq}</version>
-			</dependency>
-
 			<!-- jms -->
 			<dependency>
 				<groupId>org.glassfish.main.javaee-api</groupId>
@@ -209,6 +201,36 @@
 				<groupId>org.hibernate</groupId>
 				<artifactId>hibernate-validator</artifactId>
 				<version>${version-hibernate-validator}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.commons</groupId>
+				<artifactId>commons-collections4</artifactId>
+				<version>${version-commons-collections4}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.fasterxml.jackson.core</groupId>
+				<artifactId>jackson-databind</artifactId>
+				<version>${version-jackson-databind}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.fasterxml.jackson.core</groupId>
+				<artifactId>jackson-core</artifactId>
+				<version>${version-jackson-core}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.jboss.netty</groupId>
+				<artifactId>netty</artifactId>
+				<version>${version-netty}</version>
+			</dependency>
+			<dependency>
+				<groupId>commons-pool</groupId>
+				<artifactId>commons-pool</artifactId>
+				<version>${version-commons-pool}</version>
+			</dependency>
+			<dependency>
+				<groupId>javax.transaction</groupId>
+				<artifactId>jta</artifactId>
+				<version>${version-jta}</version>
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
