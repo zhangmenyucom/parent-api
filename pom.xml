@@ -218,11 +218,6 @@
 				<version>${version-jackson}</version>
 			</dependency>
 			<dependency>
-				<groupId>org.jboss.netty</groupId>
-				<artifactId>netty</artifactId>
-				<version>${version-netty}</version>
-			</dependency>
-			<dependency>
 				<groupId>commons-pool</groupId>
 				<artifactId>commons-pool</artifactId>
 				<version>${version-commons-pool}</version>
